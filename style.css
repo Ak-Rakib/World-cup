@@ -1,0 +1,87 @@
+/*----------------------
+ -----Common styles-----*/
+body{
+    font-family: 'Archivo', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+main{
+    background-color: aliceblue;
+}
+/*----------------------
+----- Banner part-------*/
+.container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banners{
+    background-color: rgb(21, 21, 21);
+    width: 1000px;
+    height: 360px;
+    border-radius: 30px;
+}
+.banner{
+    display: flex;
+}
+.side-text{
+    Width:531px;
+    Height:424px;
+    color: white;
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 64px;
+    padding-bottom: 111px;
+}
+.banner-title{
+    font-size: 30px;
+    font-weight: 700;
+}
+/* .banner-details{
+    font-size: 16px;
+    font-weight: 400;
+} */
+.btn{
+    background-color: #DD0000;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+}
+.banner-img{
+    width: 581px;
+    height: 613px;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+/*----------------------- 
+  -------login panel----- */
+  .login-panel{
+    background-color: rgb(11, 8, 8);
+    padding: 15px;
+    border-radius: 5px;
+  }
+  .button-1{
+    padding: 5px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+  .button-2{
+    padding: 5px 15px;
+    padding-left: 37px;
+    padding-right: 37px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+  .red-button{
+    padding: 5px 15px;
+    padding-right: 53px;
+    padding-left: 53px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color: red;
+    color: whitesmoke;
+  }
