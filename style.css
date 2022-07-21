@@ -39,6 +39,8 @@ Banner part
     border-radius: 5px;
     color: white;
     padding: 10px 30px;
+    display: flex;
+    align-items: center;
  }
  .banner-img{
     padding-top:10px;
@@ -109,6 +111,12 @@ Banner part
       box-shadow: 10px 10px 4px lightgray;
       border-radius: 7px;
     }
+    .blogs-panel{
+      width: 312px;
+      background-color: white;
+      box-shadow: 10px 10px 4px lightgray;
+      border-radius: 7px;
+    }
     .img{
       width: 312px;
     } 
@@ -144,16 +152,23 @@ Banner part
     /* 
        Footer panel 
      */
-
+      .view-all{
+        display: flex;
+        justify-content: center;
+        margin: 50px;
+      }
+      .view-button{
+        background-color: #DD0000;
+        padding: 10px 35px;
+        color: white;
+        border-radius: 5px;
+      }
      .footer-parent{
       background-color: black;
       width: 1224px;
       height: 300px;
      }
      .footer-child{
-      display: inline;
-      justify-content: center;
-      align-items: center;
       color: aliceblue;
      }
      .footer-title{
@@ -178,3 +193,120 @@ Banner part
      .ftr-last-item{
       margin-top: 60px;
      }
+
+     /* 
+       Media query
+      */
+
+      /* --------
+       For mobile
+       -------- */
+      @media screen and (max-width: 688px) {
+        .view-all{
+          display: none;
+        }
+        .container{
+          justify-content: space-around;
+          margin: 18px;
+          border-radius: 7px;
+          max-width: 100%;
+          height: auto;
+        }
+        .banner-title{
+          font-size: 20px;
+          text-align: center;
+        }
+        .banner-details{
+          font-size: 14px;
+          text-align: center;
+        }
+        .banner-button{
+          position: relative;
+          left: 55px;
+        }
+        .banner-img{
+          width: auto;
+          padding-left: 35px;
+          padding-right: 35px;
+        }
+        .login-parent{
+          display: contents;
+          justify-content: center;
+          /* background-color: white; */
+        }
+        .blog-parent{
+          display: inline-block;
+          justify-content: center;
+          margin-right: 0%;
+        }
+        .blogs{
+          display: grid;
+          grid-template-columns: repeat(1,1fr);
+          margin: 18px;
+        }
+        .footer-parent{
+          max-width: 100%;
+          height: auto;
+        }
+        .ftr-title{
+          font-size: 22px;
+        }
+        .last-item{
+          flex-direction: column;
+          align-items: center;
+          padding-bottom: 68px;
+        }
+        .ftr-last-item{
+          font-size: 14px;
+        }
+      }
+
+      /* ---------
+         For tablet 
+      -------- */
+
+      @media screen and (min-width: 689px) and (max-width: 991px){
+        .container{
+          flex-wrap: nowrap;
+          margin: 18px;
+          border-radius: 7px;
+          max-width: 100%;
+          height: auto;
+        }
+        .banner-info{
+          max-width: 50%;
+        }
+        .banner-title{
+          font-size: 40px;
+        }
+        .banner-details{
+          font-size: 14px;
+        }
+        .login-parent{
+          display: contents;
+        }
+        .login-child{
+          display: inline-flex;
+          position: absolute;
+          left: 150px;
+          margin: -75px;
+          margin-left: 13px;
+          padding-top:4% ;
+        }
+        .blogs{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          margin: 14px;
+        }
+        .blogs-panel{
+          display: none;
+        }
+        .footer-parent{
+          max-width: 100%;
+          height: auto;
+        }
+        .last-item{
+          justify-content: space-evenly;
+          padding-bottom: 68px;
+        }
+      }
